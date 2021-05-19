@@ -2,121 +2,110 @@
   <!-- Main content -->
   <section class="content">
     <!-- GitHub hint -->
-    <div class="row">
-      <div class="col-xs-12">
-        <alert :dismissible="true"
-               type="success"
-               :iconClasses="['fa', 'fa-check']"
-               title="CoPilot is open source!">
-          <span>Click on icon to check it out on github.</span>
-          <a href="https://github.com/misterGF/CoPilot" target="_blank">
-            <i class="fa fa-github fa-2x"></i>
-          </a>
-        </alert>
-      </div>
+<!--    <div class="row">-->
 
-      <!-- Info boxes -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <info-box color-class="bg-aqua"
-                  :icon-classes="['ion', 'ion-ios-gear-outline']"
-                  text="CPU Traffic"
-                  number="90%"></info-box>
-      </div>
-      <!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <info-box color-class="bg-red"
-                  :icon-classes="['fa', 'fa-google-plus']"
-                  text="Likes"
-                  number="41,410"></info-box>
-      </div>
-      <!-- /.col -->
+<!--      &lt;!&ndash; Info boxes &ndash;&gt;-->
+<!--      <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <info-box color-class="bg-aqua"-->
+<!--                  :icon-classes="['ion', 'ion-ios-gear-outline']"-->
+<!--                  text="CPU Traffic"-->
+<!--                  number="90%"></info-box>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; /.col &ndash;&gt;-->
+<!--      <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <info-box color-class="bg-red"-->
+<!--                  :icon-classes="['fa', 'fa-google-plus']"-->
+<!--                  text="Likes"-->
+<!--                  number="41,410"></info-box>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; /.col &ndash;&gt;-->
 
-      <!-- fix for small devices only -->
-      <div class="clearfix visible-sm-block"></div>
-      
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <info-box color-class="bg-green"
-                  :icon-classes="['ion', 'ion-ios-cart-outline']"
-                  text="Sales"
-                  number="760"></info-box>
-      </div>
-      <!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <info-box color-class="bg-yellow"
-                  :icon-classes="['ion', 'ion-ios-people-outline']"
-                  text="New Members"
-                  number="2,000"></info-box>
-      </div>
-      <!-- /.col -->
-    </div>
+<!--      &lt;!&ndash; fix for small devices only &ndash;&gt;-->
+<!--      <div class="clearfix visible-sm-block"></div>-->
+
+<!--      <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <info-box color-class="bg-green"-->
+<!--                  :icon-classes="['ion', 'ion-ios-cart-outline']"-->
+<!--                  text="Sales"-->
+<!--                  number="760"></info-box>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; /.col &ndash;&gt;-->
+<!--      <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <info-box color-class="bg-yellow"-->
+<!--                  :icon-classes="['ion', 'ion-ios-people-outline']"-->
+<!--                  text="New Members"-->
+<!--                  number="2,000"></info-box>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; /.col &ndash;&gt;-->
+<!--    </div>-->
     <!-- /.row -->
 
-    <div class="col-xs-12">
-      <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title"></h3>
-          <div class="box-body">
-            <div class="col-sm-6 col-xs-12">
-              <p class="text-center">
-                <strong>Web Traffic Overview</strong>
-              </p>
-              <canvas id="trafficBar" ></canvas>
-            </div>
-            <hr class="visible-xs-block">
-            <div class="col-sm-6 col-xs-12">
-              <p class="text-center">
-                <strong>Language Overview</strong>
-              </p>
-              <canvas id="languagePie"></canvas>
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <small><b>Pro Tip</b> Don't forget to star us on github!</small>
-        </div>
-      </div>
-    </div>
-    <!-- /.row -->
+<!--    <div class="col-xs-12">-->
+<!--      <div class="box">-->
+<!--        <div class="box-header with-border">-->
+<!--          <h3 class="box-title"></h3>-->
+<!--          <div class="box-body">-->
+<!--            <div class="col-sm-6 col-xs-12">-->
+<!--              <p class="text-center">-->
+<!--                <strong>Web Traffic Overview</strong>-->
+<!--              </p>-->
+<!--              <canvas id="trafficBar" ></canvas>-->
+<!--            </div>-->
+<!--            <hr class="visible-xs-block">-->
+<!--            <div class="col-sm-6 col-xs-12">-->
+<!--              <p class="text-center">-->
+<!--                <strong>Language Overview</strong>-->
+<!--              </p>-->
+<!--              <canvas id="languagePie"></canvas>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="text-center">-->
+<!--          <small><b>Pro Tip</b> Don't forget to star us on github!</small>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; /.row &ndash;&gt;-->
 
-    <!-- Main row -->
-    <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <process-info-box color-class="bg-yellow"
-                          :icon-classes="['ion', 'ion-ios-pricetag-outline']"
-                          text="Inventory"
-                          number="5,200"
-                          :progress="50"
-                          description="50% increase since May"></process-info-box>
-      </div>
-      <!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <process-info-box color-class="bg-green"
-                          :icon-classes="['ion', 'ion-ios-heart-outline']"
-                          text="Mentions"
-                          number="92,050"
-                          :progress="20"
-                          description="20% increase in 30 days"></process-info-box>
-      </div>
-      <!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <process-info-box color-class="bg-red"
-                          :icon-classes="['ion', 'ion-ios-cloud-download-outline']"
-                          text="Downloads"
-                          number="114,381"
-                          :progress="70"
-                          description="70% increase since yesterday"></process-info-box>
-      </div>
-      <!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <process-info-box color-class="bg-aqua"
-                          :icon-classes="['ion', 'ion-ios-chatbubble-outline']"
-                          text="Direct Messages"
-                          number="163,921"
-                          :progress="40"
-                          description="40% increase compared to last year"></process-info-box>
-      </div>
-      <!-- /.col -->
-    </div>
+<!--    &lt;!&ndash; Main row &ndash;&gt;-->
+<!--    <div class="row">-->
+<!--      <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <process-info-box color-class="bg-yellow"-->
+<!--                          :icon-classes="['ion', 'ion-ios-pricetag-outline']"-->
+<!--                          text="Inventory"-->
+<!--                          number="5,200"-->
+<!--                          :progress="50"-->
+<!--                          description="50% increase since May"></process-info-box>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; /.col &ndash;&gt;-->
+<!--      <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <process-info-box color-class="bg-green"-->
+<!--                          :icon-classes="['ion', 'ion-ios-heart-outline']"-->
+<!--                          text="Mentions"-->
+<!--                          number="92,050"-->
+<!--                          :progress="20"-->
+<!--                          description="20% increase in 30 days"></process-info-box>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; /.col &ndash;&gt;-->
+<!--      <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <process-info-box color-class="bg-red"-->
+<!--                          :icon-classes="['ion', 'ion-ios-cloud-download-outline']"-->
+<!--                          text="Downloads"-->
+<!--                          number="114,381"-->
+<!--                          :progress="70"-->
+<!--                          description="70% increase since yesterday"></process-info-box>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; /.col &ndash;&gt;-->
+<!--      <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--        <process-info-box color-class="bg-aqua"-->
+<!--                          :icon-classes="['ion', 'ion-ios-chatbubble-outline']"-->
+<!--                          text="Direct Messages"-->
+<!--                          number="163,921"-->
+<!--                          :progress="40"-->
+<!--                          description="40% increase compared to last year"></process-info-box>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; /.col &ndash;&gt;-->
+<!--    </div>-->
     <!-- /.row -->
   </section>
   <!-- /.content -->

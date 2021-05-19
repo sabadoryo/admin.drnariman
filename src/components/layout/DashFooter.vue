@@ -1,7 +1,6 @@
 <template>
   <footer class="main-footer">
-    <strong>Copyright &copy; {{ year }}
-    <a href="javascript:;">CoPilot</a>.</strong> All rights reserved.
+    <strong>Dr.Nariman</strong>
   </footer>
 </template>
 

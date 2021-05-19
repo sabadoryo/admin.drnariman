@@ -7,7 +7,7 @@
       <form @submit.prevent="checkCreds">
         <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-          <input class="form-control" name="username" placeholder="Username" type="text" v-model="username">
+          <input class="form-control" name="email" placeholder="Username" type="text" v-model="email">
         </div>
 
         <div class="input-group">
@@ -32,14 +32,14 @@ export default {
     return {
       section: 'Login',
       loading: '',
-      username: '',
+      email: '',
       password: '',
       response: ''
     }
   },
   methods: {
     checkCreds() {
-      const { username, password } = this
+      const { email, password } = this
 
       this.toggleLoading()
       this.resetResponse()
@@ -47,7 +47,7 @@ export default {
 
       /* Making API call to authenticate a user */
       api
-        .request('post', '/login', { username, password })
+        .request('post', '/auth/login', { email, password })
         .then(response => {
           this.toggleLoading()
 
@@ -69,7 +69,7 @@ export default {
 
           /* Setting user in the state and caching record to the localStorage */
           if (data.user) {
-            var token = 'Bearer ' + data.token
+            var token = 'Bearer ' + data.access_token
 
             this.$store.commit('SET_USER', data.user)
             this.$store.commit('SET_TOKEN', token)

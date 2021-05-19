@@ -1,25 +1,25 @@
 <template>
   <header class="main-header">
     <span class="logo-mini">
-      <a href="/"><img src="/static/img/copilot-logo-white.svg" alt="Logo" class="img-responsive center-block logo"></a>
+      <a href="/"><img src="/static/img/Group%2079.svg" alt="Logo" class="img-responsive center-block logo"></a>
     </span>
     <!-- Header Navbar -->
-    <nav class="navbar navbar-static-top" role="navigation">
-      <!-- Sidebar toggle button-->
-      <a href="javascript:;" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
+<!--    <nav class="navbar navbar-static-top" role="navigation">-->
+<!--      &lt;!&ndash; Sidebar toggle button&ndash;&gt;-->
+<!--      <a href="javascript:;" class="sidebar-toggle" data-toggle="offcanvas" role="button">-->
+<!--        <span class="sr-only">Toggle navigation</span>-->
+<!--      </a>-->
 
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <messages-menu></messages-menu>
-          <notifications-menu></notifications-menu>
-          <tasks-menu></tasks-menu>
-          <user-menu :user="user"></user-menu>
-        </ul>
-      </div>
-    </nav>
+<!--      &lt;!&ndash; Navbar Right Menu &ndash;&gt;-->
+<!--      <div class="navbar-custom-menu">-->
+<!--        <ul class="nav navbar-nav">-->
+<!--          <messages-menu></messages-menu>-->
+<!--          <notifications-menu></notifications-menu>-->
+<!--          <tasks-menu></tasks-menu>-->
+<!--          <user-menu :user="user"></user-menu>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </nav>-->
   </header>
 </template>
 

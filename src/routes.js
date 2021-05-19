@@ -4,12 +4,11 @@ import NotFoundView from './components/404.vue'
 
 // Import Views - Dash
 import DashboardView from './components/views/Dashboard.vue'
-import TablesView from './components/views/Tables.vue'
-import TasksView from './components/views/Tasks.vue'
-import SettingView from './components/views/Setting.vue'
-import AccessView from './components/views/Access.vue'
-import ServerView from './components/views/Server.vue'
-import ReposView from './components/views/Repos.vue'
+import Services from './components/views/admin/Services/Services'
+import ServicesCreate from './components/views/admin/Services/ServicesCreate'
+import ServicesEdit from './components/views/admin/Services/ServicesEdit'
+import Diseases from './components/views/admin/Diseases/Diseases'
+import DiseasesCreate from './components/views/admin/Diseases/DiseasesCreate'
 
 // Routes
 const routes = [
@@ -22,41 +21,38 @@ const routes = [
     component: DashView,
     children: [
       {
+        path: 'services',
+        component: Services,
+        name: 'Сервисы',
+        meta: {description: 'Dr.Nariman clinic'}
+      },
+      {
+        path: 'services/create',
+        component: ServicesCreate,
+        name: 'Создать сервис'
+      },
+      {
+        path: 'services/edit/:id',
+        component: ServicesEdit,
+        name: 'Изменить сервис'
+      },
+      {
+        path: 'diseases',
+        component: Diseases,
+        name: 'Услуги',
+        meta: {description: 'Dr.Nariman clinic'}
+      },
+      {
+        path: 'diseases/create',
+        component: DiseasesCreate,
+        name: 'Создать услугу'
+      },
+      {
         path: 'dashboard',
         alias: '',
         component: DashboardView,
-        name: 'Dashboard',
-        meta: {description: 'Overview of environment'}
-      }, {
-        path: 'tables',
-        component: TablesView,
-        name: 'Tables',
-        meta: {description: 'Simple and advance table in CoPilot'}
-      }, {
-        path: 'tasks',
-        component: TasksView,
-        name: 'Tasks',
-        meta: {description: 'Tasks page in the form of a timeline'}
-      }, {
-        path: 'setting',
-        component: SettingView,
-        name: 'Settings',
-        meta: {description: 'User settings page'}
-      }, {
-        path: 'access',
-        component: AccessView,
-        name: 'Access',
-        meta: {description: 'Example of using maps'}
-      }, {
-        path: 'server',
-        component: ServerView,
-        name: 'Servers',
-        meta: {description: 'List of our servers', requiresAuth: true}
-      }, {
-        path: 'repos',
-        component: ReposView,
-        name: 'Repository',
-        meta: {description: 'List of popular javascript repos'}
+        name: 'Клиника Dr.Nariman',
+        meta: {description: 'Главная'}
       }
     ]
   }, {

@@ -15,6 +15,15 @@ import { domain, count, prettyDate, pluralize } from './filters'
 // Import Views - Top level
 import AppView from './components/App.vue'
 
+import wysiwyg from 'vue-wysiwyg'
+import 'vue-wysiwyg/dist/vueWysiwyg.css'
+Vue.use(wysiwyg, {
+  image: {
+    uploadURL: 'http://drnariman.test/api/admin/upload-image-for-editor'
+  },
+  maxHeight: '500px'
+})
+
 // Import Install and register helper items
 Vue.filter('count', count)
 Vue.filter('domain', domain)

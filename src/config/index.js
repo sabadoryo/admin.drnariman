@@ -1,5 +1,5 @@
 export default {
-  serverURI: '',
+  serverURI: 'http://sabadoryo.com',
   fixedLayout: false,
   hideLogoOnMobile: false
 }
